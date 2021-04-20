@@ -1,4 +1,7 @@
 # Lists are collections of items in an order
+# Lists allow you to have duplicates
+# Lists are ordered
+
 names = ['jason', 'hagrid', 'marik']
 print(names[1].title()) #being fancy ;)
 
@@ -50,5 +53,24 @@ for name in userInput:
 
 print(names)
 
-# dealing with lists of numbers in python
-# digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+# Copying a list
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+digitsReversed = digits.copy()
+digitsReversed.sort(reverse = True)
+alsoDigits = list(digits)
+
+# Appending a lists
+digits.extend(digitsReversed)
+
+# How many times does x value exist in list
+numOfTimesShown = digits.count(4)
+
+# List comprehension - shorthand for creating a new list from existing
+# newList = [expression for member in iterable]
+numLessThanFive = [x for x in digits if x < 5 ]
+
+def addFive(num):
+    return num + 5
+
+digitsPlusFive = [addFive(i) for i in alsoDigits if i < 3]
+
