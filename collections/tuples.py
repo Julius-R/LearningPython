@@ -34,3 +34,5 @@ myMulTuple = myTuple * 4
 print(myMulTuple)
 
 print(myMulTuple.count(searchValue)) 
+
+print(myTuple.index("apple"))
