@@ -34,3 +34,8 @@ my_tripler = my_lambda(3)
 my_doubler = my_lambda(2)
 print(my_doubler(5))
 print(my_tripler(5))
+
+
+
+
+
